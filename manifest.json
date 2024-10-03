@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Media Downloader",
+  "version": "1.0",
+  "description": "Downloads media files from web pages.",
+  "permissions": [
+    "downloads",
+    "webRequest",
+    "webRequestBlocking",
+    "contextMenus",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>","https://example.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "group.png",
+      "48": "group.png",
+      "128": "group.png"
+    }
+  }
+}
